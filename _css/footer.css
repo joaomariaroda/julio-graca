@@ -1,0 +1,127 @@
+/* footer  */
+
+.pagina footer a,
+.pagina footer h2 {
+  color: var(--castanho_100);
+  text-transform: none;
+  padding: 0;
+  letter-spacing: 0;
+}
+
+.pagina footer ul {
+  padding: 0;
+  margin: 0;
+}
+
+.pagina footer a {
+  text-decoration: none;
+}
+
+.pagina footer h2 {
+  font-size: var(--fs-footer-01);
+  /* font-weight: 600; */
+  margin-bottom: 0.5em;
+}
+
+.pagina footer :is(li, a, a span, span) {
+  font-size: calc(var(--fs-footer-02) * 0.9);
+  margin-bottom: 0.25em;
+  list-style: none;
+}
+
+.pagina > footer {
+  background-color: var(--azul_400);
+}
+
+.pagina footer .wrapper_1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 2em;
+  row-gap: 3em;
+  margin-bottom: 5em;
+}
+
+@media screen and (width >= 600px) {
+  .pagina footer .wrapper_1 {
+    grid-template-columns: 13em 12em;
+  }
+}
+
+@media screen and (width >= 750px) {
+  .pagina footer .wrapper_1 {
+    grid-template-columns: 10em 13em 11em;
+  }
+}
+
+.pagina footer .creditosWebsite span.portfolio {
+  font-style: italic;
+}
+
+.pagina footer a.creditosWebsite :is(h2, p) {
+  color: #e8ca9b;
+}
+
+.pagina footer a.creditosWebsite:hover :is(h2, p) {
+  color: #d99356;
+}
+
+.pagina footer a.creditosWebsite:hover {
+  text-decoration: none;
+}
+
+.pagina footer a.creditosWebsite p {
+  margin-top: 0.2em;
+  margin-bottom: 0;
+}
+
+.pagina footer a.creditosWebsite p.portfolio {
+  margin: 0;
+}
+
+.pagina footer a.creditosWebsite p.portfolio {
+  font-style: italic;
+}
+
+.pagina footer a.creditosWebsite > h2 {
+  font-size: var(--fs-footer-02);
+}
+
+.pagina footer .creditosWebsite > p {
+  font-size: 1.1em;
+  line-height: 1.4;
+}
+
+.pagina footer .creditosWebsite > p.portfolio {
+  font-size: var(--fs-footer-04);
+}
+
+.pagina footer a:hover {
+  text-decoration: underline 2px solid currentColor;
+  color: var(--castanho_100);
+}
+
+/* Creditos portfolio */
+
+.pagina footer .creditosWebsite a span.portfolio {
+  display: block;
+  font-size: var(--fs-footer-04);
+  margin: 0.2em 0 1em;
+}
+
+.pagina footer h2 {
+  display: none;
+}
+
+.pagina footer {
+  padding: 2em;
+  padding-bottom: 0.1em;
+  padding-top: 3em;
+}
+
+.pagina footer :is(li.neoRealismoMundo) {
+  margin-bottom: 0.5em;
+}
+
+footer .julioGraca ul li.inicio {
+  margin-bottom: 1em;
+}

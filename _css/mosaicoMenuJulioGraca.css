@@ -1,0 +1,185 @@
+:root {
+  --azul_100: #b6c9c9;
+  --azul_200: #7190a4;
+  --azul_300: #468282;
+  --azul_301: #3b6b8a;
+  --azul_400: #173752;
+  --castanho_100: #fffced;
+  --castanho_200: #d9ceb6;
+  --castanho_300: #9b8f7f;
+  --castanho_400: #988b82;
+  --castanho_401: #43230d;
+  --castanho_500: #401d13;
+  --vermelho_100: #bd3e3e;
+  --vermelho_200: #a32e51;
+
+  --fs_600: clamp(2.7rem, 9vw + 0.1rem, 4.5rem);
+  --fs_500: clamp(1.5rem, 4.7vw + 0.1rem, 2.45rem);
+  --fs_400: clamp(1.2rem, 3.75vw + 0.1rem, 2rem);
+  --fs_300: clamp(1rem, 3.6vw + 0.1rem, 1.25rem);
+  --fs_200: clamp(0.6rem, 3.6vw + 0.1rem, 1rem);
+  --fs_100: clamp(0.85rem, 1.3vw + 0.1rem, 1rem);
+
+  --spacer: 1rem;
+  --space-md: calc(var(--spacer) * 2);
+  --space-lg: calc(var(--spacer) * 3);
+
+  --wrapper-padding-inline: 1rem;
+
+  --wrapper-max-width: 50rem;
+  --padding-general-1: 0.3em;
+
+  --fs-footer-01: 1.5em;
+  --fs-footer-02: 1.25em;
+  --fs-footer-03: 1.1em;
+  --fs-footer-04: 1em;
+
+  --cor-lista-obras: #3c5d65;
+}
+
+/* menu mosaico júlio graça */
+
+.mosaicoCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16em), 1fr));
+  gap: 1em;
+  margin-bottom: 12em;
+}
+
+.mosaicoCards .card {
+  container-type: inline-size;
+  margin-bottom: 1.75em;
+}
+
+.mosaicoCards img {
+  width: 100%;
+  height: 250px;
+  border-radius: 0.5em;
+  object-fit: none;
+  object-position: top left;
+}
+
+.card :not(img) {
+  padding-inline: 0.5rem;
+  color: black;
+}
+
+.mosaicoCards p {
+  margin-bottom: 0;
+  font-size: min(1.4rem, 9cqw);
+}
+
+.mosaicoCards a {
+  font-style: italic;
+  text-decoration: solid 2px underline;
+  text-underline-offset: 4px;
+  padding-block: 1em;
+  font-size: 1.2rem;
+  color: var(--azul_300);
+  display: block;
+  font-size: min(1.4rem, 7cqw);
+}
+
+.mosaicoCards a:hover {
+  color: var(--vermelho_200);
+}
+
+.mosaicoCards h2 {
+  font-size: max(1.5rem, 12cqw);
+  font-style: italic;
+  margin-bottom: 0.25rem;
+}
+
+.mosaicoCards .card.hino.sociedade {
+  grid-column: 1;
+}
+
+/* listaObras */
+
+.listaObras {
+  background-color: var(--azul_100);
+  color: var(--castanho_500);
+}
+
+:is(.data, .tipo) {
+  font-weight: 600;
+  color: var(--cor-lista-obras);
+  margin-bottom: 0.25em;
+}
+
+.capa {
+  color: var(--cor-lista-obras);
+  /* font-weight: 600; */
+}
+
+ul.lista li a {
+  margin-top: 0.6em;
+  text-decoration: underline dashed 2px;
+  text-decoration-color: inherit;
+  display: block;
+  text-underline-offset: 0.5em;
+  color: var(--cor-lista-obras);
+  font-weight: 600;
+}
+
+ul.lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: auto auto auto auto auto;
+  column-gap: 1.5em;
+  padding-block: 5rem;
+  padding-inline: 1rem;
+}
+
+ul.lista li {
+  /*! display: grid; */
+  /*! grid-template-rows: subgrid; */
+  /*! grid-row: span 5; */
+  margin-bottom: 4rem;
+}
+
+ul.lista dl {
+  display: grid;
+  grid-row: unset;
+  grid-template-rows: auto;
+  gap: 0em;
+  container-type: inline-size;
+}
+
+ul.lista dt {
+  /*! font-style: italic; */
+  font-size: 10cqw;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+ul.lista dd.capa {
+  margin-top: 0.2em;
+}
+
+li.item {
+  container-type: inline-size;
+}
+
+ul.lista dd,
+li.item a {
+  font-size: min(8.5cqw, 1.3rem);
+}
+
+ul.lista li a:hover {
+  color: var(--vermelho_200);
+}
+
+.listaObras h2 {
+  padding-top: 4rem;
+}
+
+ul.lista li.hino-euterpe {
+  grid-column: 1;
+}
+
+@media screen and (width >= 936px) {
+  ul.lista li.hino-euterpe {
+    grid-column: unset;
+  }
+}

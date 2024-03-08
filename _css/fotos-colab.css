@@ -1,0 +1,60 @@
+.pagina.fotos-colab h2 {
+  margin-top: 1.2em;
+  margin-bottom: 0em;
+}
+
+.pagina.fotos-colab h2 span.contexto {
+  display: block;
+  margin-top: 0.2em;
+  font-size: 80%;
+}
+
+.pagina.fotos-colab .img {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  gap: 1em;
+}
+
+.pagina.fotos-colab .img.celeste {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+
+@media (width >= 500px) {
+  .pagina.fotos-colab .img.celeste {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 860px) {
+  .pagina.fotos-colab .img.celeste {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.pagina.fotos-colab h3:first-of-type {
+  margin-top: 3em;
+}
+
+.pagina.fotos-colab h3.celesteBexiga {
+  margin-top: 2em;
+}
+
+.pagina.fotos-colab h4 {
+  margin-top: 0.5em;
+}
+
+/* .pagina.fotos-colab h4.encerramento {
+  margin-top: 0em;
+} */
+
+.pagina.fotos-colab p.agradecimento {
+  margin-block: 8em;
+  margin-left: max(1.5em, 2vw);
+  font-weight: 600;
+}
+
+.pagina.fotos-colab .data {
+  margin-top: 0.5em;
+}

@@ -1,0 +1,189 @@
+:root {
+  --azul_100: #b6c9c9;
+  --azul_200: #7190a4;
+  --azul_300: #468282;
+  --azul_301: #3b6b8a;
+  --azul_400: #173752;
+  --castanho_100: #fffced;
+  --castanho_200: #d9ceb6;
+  --castanho_300: #9b8f7f;
+  --castanho_400: #988b82;
+  --castanho_401: #43230d;
+  --castanho_500: #401d13;
+  --vermelho_100: #bd3e3e;
+  --vermelho_200: #a32e51;
+
+  --fs_600: clamp(2.7rem, 9vw + 0.1rem, 4.5rem);
+  --fs_500: clamp(1.5rem, 4.7vw + 0.1rem, 2.45rem);
+  --fs_400: clamp(1.2rem, 3.75vw + 0.1rem, 2rem);
+  --fs_300: clamp(1rem, 3.6vw + 0.1rem, 1.25rem);
+  --fs_200: clamp(0.6rem, 3.6vw + 0.1rem, 1rem);
+  --fs_100: clamp(0.85rem, 1.3vw + 0.1rem, 1rem);
+
+  --spacer: 1rem;
+  --space-md: calc(var(--spacer) * 2);
+  --space-lg: calc(var(--spacer) * 3);
+
+  --wrapper-padding-inline: 1rem;
+
+  --wrapper-max-width: 50rem;
+  --padding-general-1: 0.3em;
+
+  --fs-footer-01: 1.5em;
+  --fs-footer-02: 1.25em;
+  --fs-footer-03: 1.1em;
+  --fs-footer-04: 1em;
+}
+
+:where(h2, h3, dd, dd a, dt) {
+  color: var(--castanho_401);
+}
+
+h2 {
+  margin: 2em 0 1em;
+}
+
+dt {
+  font-weight: 600;
+  margin-top: 1em;
+  font-size: var(--fs_400);
+}
+
+dd,
+a {
+  margin-bottom: 0.5em;
+  font-size: var(--fs_400);
+}
+
+.participantesTelao {
+  margin: 0;
+}
+
+/* :nth-child(1 of .participantesTelao) {
+  margin-top: 0.5em;
+} */
+
+/* :nth-last-child(1 of .participantesTelao) {
+  margin-bottom: 0.25em;
+} */
+
+dd.contextoTelao,
+dd.contextoTelao a {
+  font-size: calc(var(--fs_400) * 0.9);
+  margin-bottom: 1em;
+}
+
+.ponto {
+  display: list-item;
+  list-style-type: circle;
+  margin-left: 1em;
+}
+
+dl.participantesTelao {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+dl.participantesTelao dt {
+  font-weight: 500;
+}
+
+dl.participantesTelao dd a {
+  font-size: calc(var(--fs_400) * 0.9);
+}
+
+dl.participantesTelao dd {
+  margin-top: 0.5em;
+}
+
+.ponto.hidden::marker {
+  color: rgba(0, 0, 0, 0);
+}
+
+dt.agradecimento {
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+/* contatos */
+
+span.hidden {
+  display: none;
+}
+
+.contatos dt {
+  margin-bottom: 0.25em;
+  margin-top: 1.5em;
+}
+
+.contatos dt + dd {
+  margin-bottom: 1em;
+}
+
+.contatos dd {
+  font-size: calc(var(--fs_400) * 0.95);
+}
+
+.contatos .termo {
+  font-size: 75%;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.1em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.fichaTecnica dt.apoioColaboracao {
+  margin-bottom: 0.5em;
+}
+
+/* programa */
+
+.programa li {
+  font-size: 1.5rem;
+}
+
+.programa li.conteudos {
+  margin: 1em 0.5em 1.2em 0;
+}
+
+.programa h3 {
+  margin-bottom: 0.25em;
+  font-weight: 600;
+}
+
+.programa :is(.entrada, .horas) {
+  font-size: 140%;
+}
+
+.programa li.titulo {
+  margin-bottom: 0.25em;
+  font-weight: 600;
+  font-size: clamp(1.2rem, 5.5vw, 1.5rem);
+}
+
+.programa li.titulo ~ li {
+  font-size: clamp(1.2rem, 5.5vw, 1.5rem);
+}
+
+.programa li.interpretes p {
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+li.interpretes li {
+  font-size: 120%;
+  margin-bottom: 0.1em;
+}
+
+.programa {
+  margin-bottom: 15em;
+}
+
+.programa .titulo.leitura {
+  max-width: 25ch;
+}
+
+.contatos dt.uniaoFreguesias + dd {
+  max-width: 30ch;
+}

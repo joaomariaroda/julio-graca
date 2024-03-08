@@ -1,0 +1,127 @@
+:root {
+  --azul_100: #b6c9c9;
+  --azul_200: #7190a4;
+  --azul_300: #468282;
+  --azul_301: #3b6b8a;
+  --azul_400: #173752;
+  --castanho_100: #fffced;
+  --castanho_200: #d9ceb6;
+  --castanho_300: #9b8f7f;
+  --castanho_400: #988b82;
+  --castanho_401: #43230d;
+  --castanho_500: #401d13;
+  --vermelho_100: #bd3e3e;
+  --vermelho_200: #a32e51;
+
+  --fs_600: clamp(2.7rem, 9vw + 0.1rem, 0.5rem);
+  --fs_500: clamp(1.5rem, 4.7vw + 0.1rem, 2.45rem);
+  --fs_400: clamp(1.2rem, 3.75vw + 0.1rem, 2rem);
+  --fs_300: clamp(1rem, 3.6vw + 0.1rem, 1.25rem);
+  --fs_200: clamp(0.6rem, 3.6vw + 0.1rem, 1rem);
+  --fs_100: clamp(0.85rem, 1.3vw + 0.1rem, 1rem);
+
+  --spacer: 1rem;
+  --space-md: calc(var(--spacer) * 2);
+  --space-lg: calc(var(--spacer) * 3);
+
+  --wrapper-padding-inline: 1rem;
+
+  --wrapper-max-width: 50rem;
+  --padding-general-1: 0.3em;
+
+  --fs-footer-01: 1.5em;
+  --fs-footer-02: 1.25em;
+  --fs-footer-03: 1.1em;
+  --fs-footer-04: 1em;
+}
+
+.pagina.mnrvfx .wrapper_1 > h2:first-child {
+  margin-top: 1.25em;
+}
+
+.pagina.mnrvfx .wrapper_1 > h2:first-child span.contexto {
+  margin-top: 0.25em;
+  display: block;
+  font-size: 80%;
+}
+
+.pagina.mnrvfx a.siteMuseu {
+  display: inline-block;
+  margin-block: 3em;
+  text-decoration: underline 3px currentColor solid;
+  text-underline-offset: 5px;
+  color: var(--vermelho_200);
+  line-height: 1.7;
+}
+
+.pagina.mnrvfx a.siteMuseu:hover {
+  color: #658465;
+}
+
+.pagina.mnrvfx h3 {
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+.pagina.mnrvfx img {
+  margin-bottom: 1em;
+}
+
+.pagina.mnrvfx .entradaLivre {
+  margin-top: 0.3em;
+}
+
+.pagina.mnrvfx p.intro {
+  margin-bottom: 0;
+  max-width: 52ch;
+}
+
+.pagina.mnrvfx p.agenda.livraria {
+  max-width: 57ch;
+}
+
+.pagina.mnrvfx div.img {
+  margin-top: 3em;
+}
+
+@media screen and (width >= 650px) {
+  .pagina.mnrvfx div.img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    gap: 0.5em;
+    margin-inline: auto;
+  }
+
+  .pagina.mnrvfx div.img img:first-child {
+    grid-column: span 2;
+  }
+  .pagina.mnrvfx div.img img {
+    margin: 0;
+  }
+}
+
+.pagina.mnrvfx .colofon dt {
+  font-weight: 600;
+  margin-top: 1em;
+  margin-bottom: 0.2em;
+}
+
+.pagina.mnrvfx .colofon dl {
+  margin-block: 4em;
+}
+
+.pagina.mnrvfx .colofon dt.pedroPita + dd {
+  max-width: 34ch;
+}
+
+.pagina.mnrvfx .colofon dt.davidSantos + dd {
+  max-width: 34ch;
+}
+
+.pagina.mnrvfx .colofon dt.motaRedol + dd {
+  max-width: 34ch;
+}
+
+.pagina.mnrvfx .colofon dt.dinaAlenquer + dd {
+  max-width: 39ch;
+}

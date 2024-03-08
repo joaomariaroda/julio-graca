@@ -1,0 +1,106 @@
+:root {
+  --azul_100: #b6c9c9;
+  --azul_200: #7190a4;
+  --azul_300: #468282;
+  --azul_301: #3b6b8a;
+  --azul_400: #173752;
+  --castanho_100: #fffced;
+  --castanho_200: #d9ceb6;
+  --castanho_300: #9b8f7f;
+  --castanho_400: #988b82;
+  --castanho_401: #43230d;
+  --castanho_500: #401d13;
+  --vermelho_100: #bd3e3e;
+  --vermelho_200: #a32e51;
+
+  --fs_600: clamp(2.7rem, 9vw + 0.1rem, 4.5rem);
+  --fs_500: clamp(1.5rem, 4.7vw + 0.1rem, 2.45rem);
+  --fs_400: clamp(1.2rem, 3.75vw + 0.1rem, 2rem);
+  --fs_300: clamp(1rem, 3.6vw + 0.1rem, 1.25rem);
+  --fs_200: clamp(0.6rem, 3.6vw + 0.1rem, 1rem);
+  --fs_100: clamp(0.85rem, 1.3vw + 0.1rem, 1rem);
+
+  --spacer: 1rem;
+  --space-md: calc(var(--spacer) * 2);
+  --space-lg: calc(var(--spacer) * 3);
+
+  --wrapper-padding-inline: 1rem;
+
+  --wrapper-max-width: 50rem;
+  --padding-general-1: 0.3em;
+
+  --fs-footer-01: 1.5em;
+  --fs-footer-02: 1.25em;
+  --fs-footer-03: 1.1em;
+  --fs-footer-04: 1em;
+}
+
+:root {
+  --blockquote-margin-left: 0.5em;
+  --blockquote-carlosReis-cor: var(--azul_301);
+  --bloclquote-cor-geral: var(--castanho_500);
+}
+
+.pilcrow {
+  color: var(--vermelho_100);
+}
+
+blockquote p {
+  margin-bottom: 0.5em;
+}
+
+blockquote:not(.carlosReis) {
+  margin-left: var(--blockquote-margin-left);
+  max-width: 38ch;
+}
+
+blockquote footer {
+  margin: 0 0 0 var(--blockquote-margin-left);
+  padding: 0;
+  background-color: var(--castanho_100);
+  font-size: calc(var(--fs_300) * 0.8);
+}
+
+blockquote {
+  color: var(--bloclquote-cor-geral);
+}
+
+blockquote footer {
+  color: var(--bloclquote-cor-geral);
+}
+
+.txtNeoRealismoLiterarioEmPortugal blockquote:nth-of-type(2) {
+  margin-block: 3em;
+}
+
+.txtNeoRealismoLiterarioEmPortugal blockquote:nth-of-type(1) {
+  margin-top: 3em;
+}
+
+blockquote.carlosReis {
+  color: var(--blockquote-carlosReis-cor);
+  margin-left: 0;
+  margin-bottom: 2em;
+}
+
+blockquote.carlosReis footer {
+  color: var(--blockquote-carlosReis-cor);
+}
+
+.txtNeoRealismoLiterarioEmPortugal .referencias {
+  font-size: calc(var(--fs_300) * 0.8);
+  max-width: 50ch;
+}
+
+.pagina.neorealismo .textos > div {
+  color: var(--azul_301);
+}
+
+.pagina.neorealismo .textos .txtNeoRealismoLiterarioEmPortugal {
+  margin-top: 4em;
+}
+
+.pagina.neorealismo .textos {
+  margin-top: 3em;
+  margin-bottom: 6em;
+}

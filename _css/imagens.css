@@ -1,0 +1,446 @@
+:root {
+  --azul_100: #b6c9c9;
+  --azul_200: #7190a4;
+  --azul_300: #468282;
+  --azul_301: #3b6b8a;
+  --azul_400: #173752;
+  --castanho_100: #fffced;
+  --castanho_200: #d9ceb6;
+  --castanho_300: #9b8f7f;
+  --castanho_400: #988b82;
+  --castanho_401: #43230d;
+  --castanho_500: #401d13;
+  --vermelho_100: #bd3e3e;
+  --vermelho_200: #a32e51;
+  --vermelho_300: #d54912;
+
+  --fs_600: clamp(2.7rem, 9vw + 0.1rem, 4.5rem);
+  --fs_500: clamp(1.5rem, 4.7vw + 0.1rem, 2.45rem);
+  --fs_400: clamp(1.2rem, 3.75vw + 0.1rem, 2rem);
+  --fs_300: clamp(1rem, 3.6vw + 0.1rem, 1.25rem);
+  --fs_200: clamp(0.6rem, 3.6vw + 0.1rem, 1rem);
+  --fs_100: clamp(0.85rem, 1.3vw + 0.1rem, 1rem);
+
+  --spacer: 1rem;
+  --space-md: calc(var(--spacer) * 2);
+  --space-lg: calc(var(--spacer) * 3);
+
+  --wrapper-padding-inline: 1rem;
+
+  --wrapper-max-width: 50rem;
+  --padding-general-1: 0.3em;
+
+  --fs-footer-01: 1.5em;
+  --fs-footer-02: 1.25em;
+  --fs-footer-03: 1.1em;
+  --fs-footer-04: 1em;
+}
+
+.imagens h2 {
+  margin-bottom: 2em;
+}
+
+.imagens h2.eventos {
+  margin-bottom: 0em;
+}
+
+.pagina.imagens ul.menuCabecalho {
+  margin: 0 0 3em 1em;
+}
+
+.pagina.imagens ul.menuCabecalho li {
+  margin-bottom: 0.4em;
+}
+
+.pagina.imagens ul.menuCabecalho a {
+  color: var(--castanho_100);
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+.pagina.imagens ul.menuCabecalho a:hover {
+  text-decoration: underline solid 2px;
+  text-underline-offset: 6px;
+}
+
+.simbolo-bola {
+  max-width: min(9em, 30%);
+  margin-block: 2em;
+}
+
+.pagina.imagens > .exposicao {
+  margin-top: 3em;
+}
+
+/* .pagina.imagens h2 {
+  margin-bottom: 0em;
+} */
+
+.pagina.imagens :is(figcaption, figcaption p) {
+  font-size: clamp(1.25rem, 3cqw + 0.1rem, 4em);
+  margin-top: 0.5em;
+  /* max-width: 35ch; */
+}
+
+.pagina.imagens a {
+  color: var(--azul_301);
+  text-decoration: underline 2px var(--azul_301);
+  margin-bottom: 1em;
+  display: inline-block;
+}
+
+.exposicao .imagens,
+.eventos .imagens.evento {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(min(20em, 100%), 1fr));
+}
+
+.pagina.imagens figure {
+  container-type: inline-size;
+  margin-bottom: 2em;
+}
+
+@container (width < 520px) {
+  .pagina.imagens figure.nucleoRetrato figcaption {
+    max-width: 25ch;
+  }
+
+  .pagina.imagens :is(figure.paineisLivros, figure.suporteFolhaSala, figure.vitrineBuzio, .vitrineBuza) figcaption {
+    max-width: 23ch;
+  }
+
+  /* .pagina.imagens figure.paineisHinos figcaption p {
+    max-width: 20ch;
+  } */
+}
+
+.dinaAlenquer figcaption {
+  max-width: 30ch;
+}
+
+.pagina.imagens figure.telao figcaption {
+  max-width: 23ch;
+}
+
+.pagina.imagens figure.paineisHinos li {
+  margin-bottom: 0.25em;
+}
+
+.eventoHeader :is(p.data, h2) {
+  font-size: var(--fs_500);
+  margin-bottom: 0;
+}
+
+.eventos .eventoHeader .hora {
+  margin-block: 1em;
+  margin-left: 0.5em;
+  font-size: var(--fs_300);
+}
+
+.eventos .eventoHeader .eventoConteudos {
+  margin-block: 1em;
+  /* margin-left: 0.5em; */
+  font-size: var(--fs_300);
+}
+
+.eventos .eventoHeader .creditosFotograficos {
+  margin-block: 1em;
+  font-size: var(--fs_300);
+  max-width: 35ch;
+}
+
+/* eventos ul - links eventos  */
+
+.eventos ul.linksEventos {
+  container-type: inline-size;
+  margin: 4em 0 3em 1em;
+}
+
+ul.linksEventos.cimo02Dez {
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+
+ul.linksEventos.cimo10Dez {
+  margin-top: 2em;
+  margin-bottom: 6em;
+}
+
+ul.linksEventos.cimo30Dez {
+  margin-top: 2em;
+  margin-bottom: 5em;
+}
+
+ul.linksEventos.baixo30Dez {
+  margin: 0em;
+}
+
+ul.linksEventos li.voltar {
+  margin: 0.3em 0 0 0.3em;
+}
+
+.eventos ul.linksEventos li a {
+  margin-bottom: 0.5em;
+}
+
+.eventos ul.linksEventos a {
+  font-size: var(--fs_300);
+  text-underline-offset: 6px;
+  text-decoration: underline 2px solid;
+  text-decoration-color: currentColor;
+  color: var(--castanho_300);
+}
+
+.eventos ul.linksEventos a:hover {
+  color: var(--azul_301);
+  text-decoration: underline 2px solid;
+  text-decoration-color: currentColor;
+}
+
+.eventos ul.linksEventos a.voltar {
+  text-decoration: none;
+}
+
+.eventos ul.linksEventos a.voltar:hover {
+  /* text-decoration: underline solid 2px; */
+  color: var(--vermelho_300);
+}
+
+/* espaco sobre as divs  */
+div.eventos {
+  margin-top: 6em;
+}
+
+/* .eventoHeader.bola {
+  margin-top: 7em;
+} */
+
+/* ul.linksEventos.antesDeBola {
+  margin-bottom: 0em;
+} */
+
+ul.linksEventos.antesDeImagensCores {
+  margin-top: 2em;
+}
+
+.pagina.imagens ul.linksVoltar.antesDeImagensCores {
+  margin-top: 2em;
+  margin-bottom: 5em;
+}
+
+@container (width < 650px) {
+  .evento.dezDezembro figcaption {
+    max-width: 29ch;
+  }
+}
+
+/* fim: eventos ul - links eventos  */
+
+.pagina.imagens p.contextoExtra {
+  margin: 0 0 0.3em 0.5em;
+  font-size: clamp(1rem, 4cqw, 1.1rem);
+}
+
+.pagina.imagens .contextoExtra {
+  max-width: 38ch;
+}
+
+.eventos figure.coro figcaption {
+  max-width: 36ch;
+}
+
+figure.sirgado figcaption {
+  max-width: 32ch;
+}
+
+figure.cancio figcaption {
+  max-width: 32ch;
+}
+
+@media screen and (width >= 688px) {
+  /* .arquivo figure img {
+    object-fit: cover;
+    height: 300px;
+  } */
+}
+
+.PPPPP__arquivo {
+  display: none;
+}
+
+.arquivo .imagens img {
+  margin-bottom: 2em;
+}
+
+.arquivo .imagens div img:last-child {
+  margin-bottom: 0em;
+}
+
+.arquivo .imagens div img {
+  border: var(--azul_400) solid 0.25em;
+}
+
+.arquivo .imagens div h3 {
+  margin-bottom: 1.5em;
+}
+
+.arquivo .imagens div p.contexto {
+  margin-bottom: 2em;
+}
+
+.arquivo .imagens div:not(:first-of-type) {
+  border-top: 2px dashed var(--azul_301);
+  padding-block: 4em;
+}
+
+.arquivo .imagens div:first-of-type {
+  padding-bottom: 5em;
+}
+
+@media screen and (width > 750px) {
+  /* grelha */
+  .arquivo .imagens :is(.telao, .nucleoJulioGraca, .nucleoNeoRealismo, .paineisLivros, .nucleoBuzio, .vitrinesLivros, .paineisHinos, .maquinaEscrever) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+  /* colocar tudo na grelha completa */
+  .arquivo .imagens :is(.nucleoJulioGraca, .nucleoNeoRealismo, .paineisLivros, .vitrinesLivros, .nucleoBuzio, .paineisHinos, .maquinaEscrever) :is(h3, p) {
+    grid-column: span 2;
+  }
+
+  /* primeira img span 2 colunas */
+  .arquivo .imagens :is(.nucleoJulioGraca, .nucleoNeoRealismo, .vitrinesLivros, .nucleoBuzio) figure:first-of-type {
+    grid-column: span 2;
+  }
+  /* retirar margin bottom – img */
+  .arquivo .imagens :is(img, figure) {
+    margin-bottom: 0;
+  }
+
+  /* telao */
+  .arquivo .imagens .telao :is(:not(img), img:first-of-type) {
+    grid-column: span 2;
+  }
+
+  .arquivo .imagens .telao :is(img, figure) {
+    margin-bottom: 0;
+  }
+  /* paineis livros */
+  .arquivo .imagens .paineisLivros > figure:first-of-type {
+    grid-column: span 2;
+  }
+
+  .arquivo .imagens .paineisLivros > figure.salario {
+    grid-column: 2;
+    grid-row: 3 / span 3;
+  }
+
+  /* nucleo buzio */
+  .arquivo .imagens .desenhoCredito {
+    grid-row: 4 / span 3;
+  }
+
+  /* paineis Hinos */
+  .arquivo .imagens .paineisHinos :is(figure:first-of-type, figure:nth-of-type(2)) {
+    grid-column: span 2;
+  }
+}
+
+/* fim @media */
+
+/* figcaption */
+.arquivo .imagens :is(figcaption p, figcaption, p.contextoExtra) {
+  font-size: clamp(0.9rem, 4.5cqw + 0.1rem, 1.1rem);
+  margin: 0.75em 0;
+}
+.arquivo .imagens p.contextoExtra {
+  margin-top: 0;
+}
+/* retirar margin bottom das img que têm legenda */
+.arquivo .imagens img:has(+ figcaption) {
+  margin-bottom: 0;
+}
+
+/* maquina escrever */
+/* .arquivo .imagens .maquinaEscrever h3 {
+  margin-bottom: 0em;
+} */
+
+/* ul.LinksVoltar */
+.pagina.imagens ul.linksVoltar {
+  margin-block: 3em;
+}
+
+.pagina.imagens ul.linksVoltar li a {
+  color: var(--vermelho_300);
+  display: list-item;
+  margin-left: 1em;
+  text-underline-offset: 7px;
+  text-decoration-color: currentColor;
+}
+
+.pagina.imagens ul.linksVoltar li a:hover {
+  color: var(--azul_301);
+}
+
+.pagina.imagens footer a {
+  color: var(--castanho_100);
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+.pagina.imagens footer a:hover {
+  text-decoration: underline solid 1.5px;
+  text-decoration-color: currentColor;
+}
+
+.pagina.imagens footer a.creditosWebsite:hover {
+  text-decoration: none;
+}
+
+.pagina.imagens div.telao .contexto a {
+  margin: 0;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.pagina.imagens div.folhaSala .contexto a {
+  margin: 0;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+ul.interpretes li {
+  font-size: calc(var(--fs_400) * 0.8);
+}
+
+.evento.dezDezembro .eventoConteudos ul {
+  margin: 0.5em 0 2em 0em;
+}
+
+p.interpretes:has(+ ul.interpretes) {
+  font-size: calc(var(--fs_400) * 0.7);
+  margin-bottom: 0em;
+}
+
+.folhaSala h3 span {
+  font-size: calc(var(--fs_500) * 0.7);
+}
+
+.maquinaEscrever figure {
+  grid-column: span 2;
+}
+
+.pagina.imagens ul.linksVoltar.ultimaDiv {
+  margin: 4em 0em 7em 0em;
+}
+
+.arquivo .imagens div:last-of-type {
+  padding-bottom: 0em;
+}
+
+.pagina.imagens .linksVoltar.exposicao {
+  margin: 1em 0em 0em;
+}

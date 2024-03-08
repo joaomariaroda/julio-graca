@@ -1,0 +1,142 @@
+:root {
+  --azul_100: #b6c9c9;
+  --azul_200: #7190a4;
+  --azul_300: #468282;
+  --azul_301: #3b6b8a;
+  --azul_400: #173752;
+  --castanho_100: #fffced;
+  --castanho_200: #d9ceb6;
+  --castanho_300: #9b8f7f;
+  --castanho_400: #988b82;
+  --castanho_401: #43230d;
+  --castanho_500: #401d13;
+  --vermelho_100: #bd3e3e;
+  --vermelho_200: #a32e51;
+
+  --fs_600: clamp(2.7rem, 9vw + 0.1rem, 0.5rem);
+  --fs_500: clamp(1.5rem, 4.7vw + 0.1rem, 2.45rem);
+  --fs_400: clamp(1.2rem, 3.75vw + 0.1rem, 2rem);
+  --fs_300: clamp(1rem, 3.6vw + 0.1rem, 1.25rem);
+  --fs_200: clamp(0.6rem, 3.6vw + 0.1rem, 1rem);
+  --fs_100: clamp(0.85rem, 1.3vw + 0.1rem, 1rem);
+
+  --spacer: 1rem;
+  --space-md: calc(var(--spacer) * 2);
+  --space-lg: calc(var(--spacer) * 3);
+
+  --wrapper-padding-inline: 1rem;
+
+  --wrapper-max-width: 50rem;
+  --padding-general-1: 0.3em;
+
+  --fs-footer-01: 1.5em;
+  --fs-footer-02: 1.25em;
+  --fs-footer-03: 1.1em;
+  --fs-footer-04: 1em;
+}
+
+.programas {
+  padding: 4rem 1em 5rem 0.5rem;
+  font-size: var(--fs_400);
+}
+
+.programas > div:first-child {
+  max-width: 25ch;
+}
+
+.programas > div:nth-child(2) {
+  max-width: 24ch;
+}
+
+.programas :is(a, p) {
+  color: var(--azul_301);
+  margin: 0;
+}
+
+.programas .programaVfx {
+  margin-top: 2em;
+}
+
+.programas a {
+  display: inline-block;
+  margin: 0.7em 0 0 0.5rem;
+  font-style: var(--fs_300);
+}
+
+.programas a p:nth-child(2) {
+  margin: 0.25em 0 0 0em;
+}
+
+.programas a + p {
+  font-size: calc(var(--fs_400) * 0.7);
+  color: #868686;
+  margin: 0.25rem 0 0 0.5rem;
+}
+
+.programas header + p {
+  margin-top: 0.55em;
+}
+
+figure.poema.buzio {
+  margin-bottom: 1em;
+}
+
+img.cabecalhoInicio {
+  border-radius: 0em;
+}
+
+header.programa p {
+  font-weight: 500;
+}
+
+/* logos Ficha Tecnica */
+
+/* .logosLinks {
+  padding: 1em;
+  margin: 5em 0 0 clamp(1em, 6vw + 0.1em, 3em);
+} */
+
+.logosLinks h2 {
+  font-size: var(--fs_300);
+  margin-bottom: 2em;
+  margin-left: 0.25em;
+  font-weight: 500;
+  margin-top: 0em;
+}
+
+.logosLinks h2:not(:first-of-type) {
+  margin-top: 3em;
+}
+
+.logosLinks img {
+  width: min(13em, 70vw);
+}
+
+.logosLinks img.uniaoFreguesias {
+  margin-bottom: 3em;
+  width: min(21em, 70vw);
+}
+
+.logosLinks a.linkFimDePagina {
+  font-size: var(--fs_300);
+  margin-left: 0.5em;
+  display: block;
+  color: var(--castanho_500);
+  font-weight: 600;
+}
+
+.logosLinks a.linkFimDePagina:hover {
+  text-decoration-thickness: 13px;
+  text-underline-offset: -12px;
+  text-decoration-skip-ink: none;
+  text-decoration-color: #d7c1b8;
+}
+
+.logosLinks a.linkFimDePagina.fichaTecnica {
+  margin-top: 7em;
+  margin-bottom: 1em;
+}
+
+.logosLinks a.linkFimDePagina.contatos {
+  margin-bottom: 7em;
+}
