@@ -404,6 +404,7 @@ figure.cancio figcaption {
   margin: 0;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
+  text-decoration:underline;
 }
 
 .pagina.imagens div.folhaSala .contexto a {
