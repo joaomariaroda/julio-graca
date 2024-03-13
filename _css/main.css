@@ -746,15 +746,13 @@ ul.linksVoltar li {
 }
 
 .mainNav li {
-  font-size: clamp(0.65rem, 2vw + 0.1rem, 1.2rem);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  padding-inline: 0.5em;
   padding-block: 0.8em;
 }
 
 .pagina .mainNav li a {
-  font-size: clamp(1.1rem, 2vw + 0.1rem, 1.2rem);
+  font-size: clamp(0.85rem, 2vw + 0.1rem, 1.2rem);
   text-decoration: none;
   color: var(--_link-color);
   margin: 0;
