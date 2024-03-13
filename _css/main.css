@@ -754,7 +754,7 @@ ul.linksVoltar li {
 }
 
 .pagina .mainNav li a {
-  font-size: clamp(1.2rem, 2vw + 0.1rem, 1.2rem);
+  font-size: clamp(1.1rem, 2vw + 0.1rem, 1.2rem);
   text-decoration: none;
   color: var(--_link-color);
   margin: 0;
