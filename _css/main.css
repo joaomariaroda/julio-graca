@@ -1,7 +1,7 @@
 :root {
   --azul_100: #b6c9c9;
   --azul_200: #7190a4;
-  --azul_300: #468282;
+  --azul_300: #468282;J
   --azul_301: #3b6b8a;
   --azul_400: #173752;
   --castanho_100: #fffced;
@@ -754,7 +754,7 @@ ul.linksVoltar li {
 }
 
 .pagina .mainNav li a {
-  font-size: clamp(0.65rem, 2vw + 0.1rem, 1.2rem);
+  font-size: clamp(1.2rem, 2vw + 0.1rem, 1.2rem);
   text-decoration: none;
   color: var(--_link-color);
   margin: 0;
