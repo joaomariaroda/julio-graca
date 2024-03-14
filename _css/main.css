@@ -743,12 +743,13 @@ ul.linksVoltar li {
   display: flex;
   justify-content: space-between;
   z-index: 9998;
+  max-width: 25em;
 }
 
 .mainNav li {
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  padding-block: 0.8em;
+  padding-block: 0.2em;
 }
 
 .pagina .mainNav li a {
