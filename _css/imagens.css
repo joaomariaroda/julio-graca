@@ -379,6 +379,7 @@ figure.cancio figcaption {
   margin-left: 1em;
   text-underline-offset: 7px;
   text-decoration-color: currentColor;
+  text-decoration: underline;
 }
 
 .pagina.imagens ul.linksVoltar li a:hover {
