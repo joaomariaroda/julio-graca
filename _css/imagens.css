@@ -190,12 +190,19 @@ ul.linksEventos li.voltar {
   text-decoration: underline 2px solid;
   text-decoration-color: currentColor;
   color: var(--castanho_300);
+  text-decoration: underline;
+text-decoration-thickness: 2px;
+text-decoration-style: solid;
 }
 
 .eventos ul.linksEventos a:hover {
   color: var(--azul_301);
   text-decoration: underline 2px solid;
   text-decoration-color: currentColor;
+text-decoration: underline;
+text-decoration-thickness: 2px;
+text-decoration-style: solid;
+  
 }
 
 .eventos ul.linksEventos a.voltar {
