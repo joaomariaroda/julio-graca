@@ -87,6 +87,7 @@
   text-decoration: underline 2px var(--azul_301);
   margin-bottom: 1em;
   display: inline-block;
+  text-decoration: underline;
 }
 
 .exposicao .imagens,
